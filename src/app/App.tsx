@@ -35,7 +35,7 @@ const analyzeInput = async (
 
   formData.append("language", language);
 
-  const res = await fetch("http://localhost:8000/analyze", {
+  const res = await fetch("https://aimed-nlp.onrender.com/analyze", {
     method: "POST",
     body: formData,
   });
