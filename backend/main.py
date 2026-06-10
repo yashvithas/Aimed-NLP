@@ -80,7 +80,7 @@ async def run_groq(prompt: str):
 # async def health_check():
 #     return {"status": "AIMED Parsing Engine Active", "mode": "Serverless"}
 
-@app.get("/")
+@app.get("/api/analyze")
 def home():
     return {"message": "AIMED NLP Backend is running"}
 
